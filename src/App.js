@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header, Footer } from './components';
-import { Home, About, Contact, NotFound, Movies } from './pages';
+import { Home, About, Contact, NotFound, Category, Recipe } from './pages';
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="movies/:id" element={<Movies />} />
+          <Route path="category/:name" element={<Category />} />
+          <Route path="meal/:mealId" element={<Recipe />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
