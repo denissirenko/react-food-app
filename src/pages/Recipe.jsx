@@ -68,7 +68,7 @@ export const Recipe = () => {
                         style={{marginTop: '1.5rem'}}
                         class="waves-effect waves-light btn"
                         onClick={() => navigate(-1)}
-                    >button</button>
+                    >back</button>
                 </div>
             )}
         </div>

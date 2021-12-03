@@ -24,7 +24,7 @@ export const Category = () => {
                         style={{marginBottom: '1rem'}}
                         class="waves-effect waves-light btn"
                         onClick={() => navigate(-1)}
-                    >button</button>
+                    >back</button>
                     <div className='list'>
                         <MealList meals={meals} />
                     </div>
