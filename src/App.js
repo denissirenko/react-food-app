@@ -4,7 +4,7 @@ import { Home, NotFound, Category, Recipe } from './pages';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/react-food-app'>
       <Header />
       <main className="container content">
         <Routes>
