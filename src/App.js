@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header, Footer } from './components';
-import { Home, About, Contact, NotFound, Category, Recipe } from './pages';
+import { Home, NotFound, Category, Recipe } from './pages';
 
 function App() {
   return (
@@ -9,8 +9,6 @@ function App() {
       <main className="container content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
           <Route path="category/:name" element={<Category />} />
           <Route path="meal/:mealId" element={<Recipe />} />
           <Route path="*" element={<NotFound />} />
